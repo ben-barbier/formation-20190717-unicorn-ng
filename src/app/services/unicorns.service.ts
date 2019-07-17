@@ -4,18 +4,15 @@ import {Observable} from 'rxjs';
 import {Unicorn} from '../models/unicorn.model';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class UnicornsService {
 
-  constructor(private http: HttpClient) {
-  }
+    constructor(private http: HttpClient) {
+    }
 
-  public list(): Observable<Unicorn[]> {
-    return this.http.get<Unicorn[]>('http://localhost:3000/unicorns');
-  }
+    public list(): Observable<Unicorn[]> {
+        return this.http.get<Unicorn[]>('http://localhost:3000/unicorns');
+    }
 
-  public like(like: number): number {
-    return like + 1;
-  }
 }

@@ -1,19 +1,5 @@
-.unicorns{
- display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-}
-
-.unicorn-card {
-  max-width: 220px;
-  margin : 20px;
-}
-
-.unicorn-header-image {
-  background-image : url('https://image.flaticon.com/icons/png/512/96/96446.png');
-  background-size: cover;
-}
-
-mat-card-actions{
-  text-align: center;
+:host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
